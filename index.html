@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+    <label for="ssid_cred" class="items">SSID Name:</label>
+  <input type="text" class="item" id="ssid_cred"><br><br>
+  <label for="pass_cred" class="items">Password:</label>
+  <input type="text" class="item" id="pass_cred"><br><br>
+  <lable for="auth_token" class="items">Auth Token:</lable>
+  <input type="text" class="item" id="auth_token"><br><br>
+   <button type="button" onclick=credentials_rec();>Submit</button>
+</div>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+       display: flex;
+       align-self: flex-start;
+       flex-direction: column;
+       margin-left:40px ;
+       position: relative;
+         
+    }
+    .items{
+      font-family:monospace ;
+      font-weight: bold;
+      font-size: 20px;
+       margin: 10px;
+       display: flex;
+       color: #0084E4;
+    }
+    button{
+        display: flex;
+        align-self: start;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 50px;
+        border-radius: 40px;
+      border: transparent;
+      color: white;
+      background-color:  #0084E4;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 15px;
+      outline: none;
+        
+    }
+    header{
+        width: 100%;
+      background-color: #0084E4;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .item{
+        width: 50%;
+        height: 30px;
+        border-radius: 10px;
+        border: solid 1px #0084E4;
+        outline: none;
+        
+
+    }
+   button:hover{
+      
+       transform: scale(1.09);
+       transition: 0.05s;
+       cursor: pointer;
+       overflow: hidden;
+   }
+    
+</style>
+</body>
+</html>
